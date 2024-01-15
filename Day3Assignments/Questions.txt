@@ -1,0 +1,69 @@
+
+1- given a list of numbers unsorted, write a program to find the median of the numbers in list
+
+2- from a list of numbers create 2 list , one containing only the even numbers and other only the odd numbers
+
+
+3- write a program to take a positive number as input from user. if the user enters negative number then keep promting him to enter positive number until he enters the positive number and then print the same
+
+4- consider the below list of list conatins following information :
+
+1. The name of a university
+2. The total number of enrolled students
+3. The annual tuition fees
+
+universities = [
+['California Institute of Technology', 2175, 37704],
+['Harvard', 19627, 39849],
+['Massachusetts Institute of Technology', 10566, 40732],
+['Princeton', 7802, 37000],
+['Rice', 5879, 35551],
+['Stanford', 19535, 40569],
+['Yale', 11701, 40500]
+]
+
+write a program to print follwoing information :
+1- a list of all the universitites  : ['California Institute of Technology','Harvard',..so on]
+2- total number of student entrolled in all the unversities together
+3- mean of tuition fees
+
+
+5- write a program to convert above universities list to a dictionary. the keys should be the name of the university
+
+6-  write a program that reverses a given string. For example, if the input is "Hello" from user, the output should be "olleH" without using step size trick.
+
+7- write a program that finds the largest number in a list(unsorted) of integers without using sort/sorted or max/min method.
+
+8- given below dictonaries of states and their capital:
+
+capitals_dict = {
+'Alabama': 'Montgomery',
+'Alaska': 'Juneau',
+'Arizona': 'Phoenix',
+'Arkansas': 'Little Rock',
+'California': 'Sacramento',
+'Colorado': 'Denver',
+'Connecticut': 'Hartford',
+'Delaware': 'Dover',
+'Florida': 'Tallahassee',
+'Georgia': 'Atlanta',
+}
+
+pick a state from above dictonary and ask user to enter the capital of the state.If the user answers incorrectly, then repeatedly ask them
+for the capital until they either enter the correct answer or type "exit".
+If the user answers correctly, then display "Correct" and end the program. However, if the user exits without guessing correctly, display
+the correct answer and the word "Goodbye".
+
+Note: Make sure the user isn’t punished for case sensitivity. In other words, a guess of "Denver" is the same as "denver". Do the same for exiting—"EXIT" and "Exit" should work the same as "exit".
+
+9- write a program to take state as input from user and print the capital of the state using above dictonary. If the state is not there in dictonary then print "sorry , information not available"
+
+10- write program to take a input(number) from the user  and print the multiplication table (up to 10) of that number.
+
+for example user input = 9 then you need to print
+
+1*9=9
+2*9=18
+--
+so on till
+10*9=90
