@@ -1,9 +1,9 @@
 import smtplib
-from email.message import EmailMessage
-msg = EmailMessage()
-msg['Subject'] = 'Test'
-msg['From'] = 'satisg.utnal@gmail.com'
-msg['To'] = 'satisg.utnal@gmail.com'
-s = smtplib.SMTP('localhost')
-s.send_message(msg)
-s.quit()
+server= smtplib.SMTP('smtp.gmail.com', 587)
+server.starttls()
+sender=input('Enter sender user mail id : ')
+password=input('Enter password: ')
+receiver = input("Enter receiver mail id")
+server.login(sender,password)
+server.sendmail(sender,receiver,'test','header')
+server.quit()
