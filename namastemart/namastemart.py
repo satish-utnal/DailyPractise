@@ -7,7 +7,7 @@ from dataquality_check import rule_validation as val
 import datetime as dt
 import csv
 import shutil as cp
-
+import smtplib
 
 def get_orders(file, src_file_path, order_schema):
     dict_order = {}
@@ -42,12 +42,25 @@ def get_products(file, src_file_path, product_schema):
             print(f"Required schema is not present for file : {file} ")
     return dict_product
 
+def sendmail(sndr, rcvr, pswd, msg):
+    try:
+        server = smtplib.SMTP('smtp.gmail.com', 587)
+        server.starttls()
+        server.login(sndr, pswd)
+        server.sendmail(sndr, rcvr, msg)
+    except Exception as e:
+        print(f"Enter Valid EMail details to receive the mail failed with Exception {e}")
+
+
 
 ds.create_dir() # create required directory structure
 src_file_path = 'incoming_files/' + dt.datetime.now().strftime('%Y%m%d') + '/'
 rej_file_path = 'rejected_files/'  + dt.datetime.now().strftime('%Y%m%d') + '/'
 success_file_path = 'success_files/' + dt.datetime.now().strftime('%Y%m%d') + '/'
 file_list = os.listdir(src_file_path)
+EMAIL_SENDER = 'abc@gmail.com'  # Required Valid email id to run this code
+EMAIL_PASSWORD = input(f"Enter password for {EMAIL_SENDER} : ")
+EMAIL_RECIEVER = EMAIL_SENDER  # Required Valid email id to send mail
 try:
     file_list.remove("product_master.csv")
 except ValueError:
@@ -90,3 +103,16 @@ else:
         exit()
     else:
         pass
+
+try:
+    subject = 'validation email '+ dt.datetime.now().strftime('%Y-%m-%d')
+
+    count=0
+    for file in file_list:
+        if file in os.listdir(rej_file_path):
+           count = count + 1
+    body = f' Total {len(file_list)} incoming files, {len(os.listdir(success_file_path))} successful files and {count} rejected files for the day'
+    msg = f'Subject : {subject}\n\n {body}'
+    sendmail(EMAIL_SENDER, EMAIL_RECIEVER, EMAIL_PASSWORD, msg)
+finally:
+    print(f'Completed execution')
