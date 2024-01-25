@@ -1,0 +1,67 @@
+Assignment 1: Creating a Simple Class
+Create a class named Person with the following attributes:
+
+name (string)
+age (integer)
+Include a method display_info that prints the person's name and age.
+
+Tasks:
+
+Create an instance of the Person class.
+Set values for the name and age attributes.
+Call the display_info method to print the person's information.
+
+
+Assignment 2: Working with Methods and Parameters
+Extend the Person class from Assignment 1 by adding a method celebrate_birthday that increments the person's age by 1.
+
+Tasks:
+
+Modify the Person class to include the celebrate_birthday method.
+
+Create an instance of the Person class and set initial values for name and age.
+Call the celebrate_birthday method and then use the display_info method to print the updated information.
+
+
+Assignment 3: Building a Bank Account Class
+Create a class named BankAccount with the following attributes:
+
+account_holder (string)
+balance (float)
+Include methods:
+
+deposit to add funds to the account.
+withdraw to deduct funds from the account.
+
+Tasks:
+
+Create an instance of the BankAccount class.
+Set values for the account_holder and balance attributes.
+Call the deposit and withdraw methods to perform transactions.
+Display the final balance.
+
+
+Assignment 4: Enhancing the Bank Account Class
+Modify the BankAccount class from Assignment 3 to include a method display_balance that prints the current balance.
+
+Tasks:
+
+Modify the BankAccount class to include the display_balance method.
+Create an instance of the modified class.
+Perform deposit and withdrawal transactions.
+Call the display_balance method to print the final balance.
+
+Assignment 5: Creating a Library Book Class
+Create a class named Book with the following attributes:
+
+title (string)
+author (string)
+is_available (boolean)
+Include a method checkout that sets the is_available attribute to False when a book is borrowed.
+
+Tasks:
+
+Create an instance of the Book class.
+Set values for the title, author, and is_available attributes.
+Call the checkout method to simulate borrowing the book.
+Display the book's information, including its availability.
