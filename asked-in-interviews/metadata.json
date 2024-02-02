@@ -1,0 +1,51 @@
+[
+    {
+        "table_name": "emp",
+        "column_name": "empid",
+        "data_type": "int",
+        "is_nullable": "no",
+        "length": ""
+    },
+    {
+        "table_name": "emp",
+        "column_name": "empname",
+        "data_type": "varchar",
+        "is_nullable": "no",
+        "length": "50"
+    },
+    {
+        "table_name": "emp",
+        "column_name": "sal",
+        "data_type": "decimal",
+        "is_nullable": "yes",
+        "length": "18,2"
+    },
+    {
+        "table_name": "emp",
+        "column_name": "address",
+        "data_type": "varchar",
+        "is_nullable": "yes",
+        "length": "100"
+    },
+    {
+        "table_name": "emp",
+        "column_name": "deptid",
+        "data_type": "int",
+        "is_nullable": "no",
+        "length": ""
+    },
+    {
+        "table_name": "dept",
+        "column_name": "deptid",
+        "data_type": "int",
+        "is_nullable": "no",
+        "length": ""
+    },
+    {
+        "table_name": "dept",
+        "column_name": "deptname",
+        "data_type": "varchar",
+        "is_nullable": "no",
+        "length": "50"
+    }
+]

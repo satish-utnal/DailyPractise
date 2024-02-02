@@ -1,0 +1,8 @@
+table_name,column_name,data_type,is_nullable,length
+emp,empid,int,no,
+emp,empname,varchar,no,50
+emp,sal,decimal,yes,"18,2"
+emp,address,varchar,yes,100
+emp,deptid,int,no,
+dept,deptid,int,no,
+dept,deptname,varchar,no,50
