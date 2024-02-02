@@ -1,5 +1,5 @@
 order_id,order_date,customer_name,city,category,product_id,sales,profit
-CA-2018-100006,2018-09-07,Dennis Kane,New York City,Technology,TEC-PH-10002075,377.97,109.6113
+CA-2018-100006,2018-09-07,dennis Kane,New York City,Technology,TEC-PH-10002075,377.97,109.6113
 CA-2018-100090,2018-07-08,Ed Braxton,San Francisco,Furniture,FUR-TA-10003715,502.488,-87.9354
 CA-2018-100293,2018-03-14,Neil Französisch,Jacksonville,Office Supplies,OFF-PA-10000176,91.056,31.8696
 CA-2018-100328,2018-01-28,Jasper Cacioppo,New York City,Office Supplies,OFF-BI-10000343,3.928,1.3257
