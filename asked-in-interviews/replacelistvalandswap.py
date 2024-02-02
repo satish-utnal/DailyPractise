@@ -1,3 +1,15 @@
+"""
+given list
+[1,2,3,4,5,2]
+
+output -- replace given number in below example its 2 
+
+[1,3,4,5,_,_]
+
+
+"""
+
+
 my_list = [1,2,3,4,5,2]
 
 
