@@ -7,7 +7,7 @@ pd.options.display.max_columns = None
 pd.options.display.max_rows = 5000
 # pd.set_option('display.max_rows' , 5000)
 
-df = pd.read_csv("orders.txt")
+df = pd.read_csv("../data/orders.txt")
 
 print(df[df["city"].isin(["Seattle", "Los Angeles", "New York City"]) & (df["profit"] < 0)].
       sort_values(["profit"], ascending=False))

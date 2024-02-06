@@ -9,6 +9,6 @@ import pandas as pd
 
 pd.options.display.width = None
 
-df = pd.read_csv("orders.txt")
+df = pd.read_csv("../data/orders.txt")
 df["profit_category"] = df["profit"].apply(lambda x: 'loss' if x < 0 else 'low profit' if (x <= 0) | (x < 100) else 'medium profit' if (x <= 100) | (x < 500) else 'high profit')
 print(df.head(100))

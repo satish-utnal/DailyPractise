@@ -16,7 +16,7 @@ pd.options.display.width = None
 # pd.options.display.max_Columns = 5000
 
 
-df = pd.read_csv("orders.txt")
+df = pd.read_csv("../data/orders.txt")
 # print(df)
 df.set_index("order_id", inplace=True)
 id_list = ['CA-2019-115742', 'CA-2020-111682', 'CA-2019-149587', 'US-2020-150147', 'CA-2020-138520']

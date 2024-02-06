@@ -2,7 +2,7 @@
 # order_id , category and sales columns
 import pandas as pd
 
-df = pd.read_csv("orders.txt")
+df = pd.read_csv("../data/orders.txt")
 pd.options.display.width = None
 pd.options.display.max_columns = None
 pd.set_option('display.max_rows', 5000)

@@ -7,7 +7,7 @@ pd.options.display.width = None
 pd.options.display.max_columns = 5000
 pd.options.display.max_rows = 5000
 
-df = pd.read_csv("orders.txt")
+df = pd.read_csv("../data/orders.txt")
 
 df["profit_flag"] = df["profit"].apply(lambda x: 1 if x > 0 else 0)
 print(df)

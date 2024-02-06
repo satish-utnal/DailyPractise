@@ -6,7 +6,7 @@ pd.options.display.width = None
 pd.options.display.max_columns = 5000
 pd.options.display.max_rows = 5000
 
-df = pd.read_csv("orders.txt")
+df = pd.read_csv("../data/orders.txt")
 print("-----original columns ----")
 print(df.columns)
 print("-----converting to upper-----")

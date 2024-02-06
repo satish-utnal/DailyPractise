@@ -4,7 +4,7 @@ import pandas as pd
 
 pd.options.display.width = None
 
-df = pd.read_csv("orders.txt")
+df = pd.read_csv("../data/orders.txt")
 
 df["sales_profit_ratio"] = (df["profit"]/df["sales"]) * 100
 

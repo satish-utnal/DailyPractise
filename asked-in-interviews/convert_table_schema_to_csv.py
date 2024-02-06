@@ -24,6 +24,6 @@ def convert_csv_to_json(input_file, output_file):
         json.dump(tags, file, indent=4)
 
 
-FILE_TO_PROCESS = "metadata.csv"
-FINAL_FILE = "metadata.json"
+FILE_TO_PROCESS = "../data/metadata.csv"
+FINAL_FILE = "../data/metadata.json"
 convert_csv_to_json(FILE_TO_PROCESS, FINAL_FILE)

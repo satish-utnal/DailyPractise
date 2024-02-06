@@ -5,6 +5,6 @@ import re
 
 pd.options.display.width = None
 
-df = pd.read_csv("orders.txt")
+df = pd.read_csv("../data/orders.txt")
 print(df[(df["customer_name"].str.lower().str.endswith('e')) & (df["customer_name"].str.lower().str.startswith('d'))])
 # print(df[df["customer_name"].apply(lambda x: (x[0] == 'D') & (x[-1] == 'e'))])
