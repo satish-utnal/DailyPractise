@@ -1,0 +1,33 @@
+Note : use the orders dataset for below problems:
+
+1- write a program to find unique list of cities where orders are placed for Office Supplies category.
+
+2- create a column as profit_category(use apply method) . sets it value as below:
+
+if profit < 0 then 'loss'
+if profit between 0 and 100 then 'low profit' 
+if profit between 100 and 500 then 'medium profit'
+else high profit 
+
+3- delete column profit_category from the dataframe
+4- delete all the rows where profit is negative 
+
+note : use the orders and returns dataset 
+
+5- write a program to get category wise sales of orders that were not returned
+
+6- write a program to get city wise count of return orders
+
+7- write a program to print cities where we have all 3 kinds of returns (others,bad quality,wrong items)
+
+8- write a program to find cities where not even a single order was returned.
+
+9- write a program to find top 3 cities by sales
+
+10- write a program to get order ids and sales of return orders whos return reason is not known (nan)
+
+11- write a program to fill unknown(nan) return reason to a default value 'unknown'
+
+12- write a program to find avg sales and avg profit for each category
+
+
