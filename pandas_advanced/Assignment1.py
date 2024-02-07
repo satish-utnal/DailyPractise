@@ -10,7 +10,6 @@ import pandas as pd
 pd.options.display.width = None
 
 orders_raw = pd.read_csv("../data/orders.txt")
-returns_raw = pd.read_csv("../data/returns.txt")
 
 
 print("------------Approach 1-----------")
