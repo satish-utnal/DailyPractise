@@ -1,7 +1,3 @@
-class Person():
-    def __init__(self, name):
-        self.name = name
-        # self.age = age
-
-display_info = Person('satish')
-print(display_info.name)
+text = input("Enter a text: ")
+word_count = len(text.split())
+print(f"Word count: {word_count}")
